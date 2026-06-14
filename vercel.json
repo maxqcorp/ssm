@@ -3,7 +3,7 @@
   "rewrites": [
     {
       "source": "/",
-      "destination": "/pitching/index.html"
+      "destination": "/pitching"
     },
     {
       "source": "/styles.css",
