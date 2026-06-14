@@ -12,6 +12,10 @@
     {
       "source": "/script.js",
       "destination": "/pitching/script.js"
+    },
+    {
+      "source": "/assets/:path*",
+      "destination": "/pitching/assets/:path*"
     }
   ]
 }
