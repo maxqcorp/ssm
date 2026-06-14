@@ -1,0 +1,17 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/pitching/index.html"
+    },
+    {
+      "source": "/styles.css",
+      "destination": "/pitching/styles.css"
+    },
+    {
+      "source": "/script.js",
+      "destination": "/pitching/script.js"
+    }
+  ]
+}
