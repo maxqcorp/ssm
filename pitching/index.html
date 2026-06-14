@@ -7,307 +7,320 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <aside class="sidebar" aria-label="Pitch deck navigation">
-      <div class="brand">
-        <div class="brand-mark" aria-hidden="true">SSM</div>
-        <div>
-          <p>R&D Grant Pitch</p>
-          <strong>AI Compliance Intelligence</strong>
+    <main class="deck-shell">
+      <header class="deck-top">
+        <div class="brand-lockup">
+          <div class="brand-mark" aria-hidden="true">SSM</div>
+          <div>
+            <p>R&D Grant Pitch</p>
+            <strong>AI Compliance Intelligence</strong>
+          </div>
         </div>
-      </div>
-
-      <nav class="slide-nav" id="slideNav" aria-label="Slides">
-        <button type="button" class="nav-item active" data-slide="0"><span>01</span>Opening</button>
-        <button type="button" class="nav-item" data-slide="1"><span>02</span>Evidence</button>
-        <button type="button" class="nav-item" data-slide="2"><span>03</span>Problem</button>
-        <button type="button" class="nav-item" data-slide="3"><span>04</span>Strategic Fit</button>
-        <button type="button" class="nav-item" data-slide="4"><span>05</span>Solution</button>
-        <button type="button" class="nav-item" data-slide="5"><span>06</span>Model</button>
-        <button type="button" class="nav-item" data-slide="6"><span>07</span>Workflow</button>
-        <button type="button" class="nav-item" data-slide="7"><span>08</span>Governance</button>
-        <button type="button" class="nav-item" data-slide="8"><span>09</span>Roadmap</button>
-        <button type="button" class="nav-item" data-slide="9"><span>10</span>Ask</button>
-      </nav>
-
-      <div class="side-meta">
-        <span id="slideCount">1 / 10</span>
-        <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
-      </div>
-    </aside>
-
-    <main class="stage">
-      <header class="topbar">
-        <div>
-          <p class="kicker">AI-Based Prototype System for Early Warning of Corporate Non-Compliance</p>
-          <h1 id="currentTitle">Opening</h1>
+        <div class="deck-title">
+          <span>AI-Based Prototype System for Early Warning of Corporate Non-Compliance</span>
+          <strong id="currentTitle">Opening</strong>
         </div>
         <div class="deck-actions" aria-label="Slide controls">
-          <button class="icon-button" id="prevSlide" type="button" aria-label="Previous slide" title="Previous slide">
-            <span aria-hidden="true">&lt;</span>
-          </button>
-          <button class="icon-button" id="nextSlide" type="button" aria-label="Next slide" title="Next slide">
-            <span aria-hidden="true">&gt;</span>
-          </button>
+          <button class="icon-button" id="prevSlide" type="button" aria-label="Previous slide" title="Previous slide">&lt;</button>
+          <button class="icon-button" id="nextSlide" type="button" aria-label="Next slide" title="Next slide">&gt;</button>
         </div>
       </header>
 
-      <section class="slide active opening" data-title="Opening">
-        <div class="slide-copy">
-          <p class="label">SSM R&D Grant Pitch</p>
-          <h2>Detect risk earlier. Prioritise action faster. Strengthen trust in Malaysia's business ecosystem.</h2>
-          <p class="lead">A 12-month RM100,000 prototype that turns existing filing, registry, MBRS, complaint, and enforcement data into explainable risk scores, alerts, and intervention workflows.</p>
-        </div>
-        <div class="executive-card">
-          <div>
-            <span>Decision focus</span>
-            <strong>Approve a low-risk AI pilot for proactive compliance monitoring.</strong>
-          </div>
-          <dl>
-            <div><dt>Scope</dt><dd>AI model + early warning dashboard</dd></div>
-            <div><dt>Duration</dt><dd>12 months</dd></div>
-            <div><dt>Budget</dt><dd>RM100,000</dd></div>
-            <div><dt>Output</dt><dd>Prototype, report, publication, IP, training toolkit</dd></div>
-          </dl>
-        </div>
-      </section>
-
-      <section class="slide evidence" data-title="Evidence">
-        <div class="slide-copy">
-          <p class="label">The compliance challenge is measurable</p>
-          <h2>In 2023, 39,325 active companies did not file Annual Return.</h2>
-          <p class="lead">Even with a strong 93% compliance rate, the non-filing segment creates enough monitoring and enforcement workload to justify risk-based prioritisation.</p>
-        </div>
-        <div class="evidence-grid">
-          <article class="hero-stat danger">
-            <span>Did not file Annual Return</span>
-            <strong>39,325</strong>
-            <p>Active companies in 2023.</p>
-          </article>
-          <article class="hero-stat success">
-            <span>Submitted Annual Return</span>
-            <strong>527,506</strong>
-            <p>Active companies in 2023.</p>
-          </article>
-          <article class="hero-stat neutral">
-            <span>Compliance rate</span>
-            <strong>93%</strong>
-            <p>Reported by SSM.</p>
-          </article>
-        </div>
-        <div class="ratio-card">
-          <div>
-            <span>Filed</span>
-            <strong>93.06%</strong>
-          </div>
-          <div class="ratio-bar" aria-label="Annual Return filing ratio">
-            <span class="ratio-fill filed" style="width: 93.06%"></span>
-            <span class="ratio-fill missed" style="width: 6.94%"></span>
-          </div>
-          <div>
-            <span>Did not file</span>
-            <strong>6.94%</strong>
-          </div>
-        </div>
-        <p class="source">Source: SSM Annual Report 2023 Enforcement Initiatives.</p>
-      </section>
-
-      <section class="slide" data-title="Problem">
-        <div class="slide-copy wide">
-          <p class="label">Why reactive enforcement is not enough</p>
-          <h2>Non-compliance usually leaves traces before it becomes an enforcement case.</h2>
-        </div>
-        <div class="problem-map">
-          <article>
-            <span>01</span>
-            <h3>Late or missing filings</h3>
-            <p>Annual Return and Financial Statement lodgement patterns reveal recurring administrative risk.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Weak corporate records</h3>
-            <p>Gaps in statutory books, company secretary information, or supporting documents can indicate governance weakness.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Entity profile changes</h3>
-            <p>Frequent changes in directors, address, shareholders, or company status become stronger signals when combined with filing history.</p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>Repeat-risk behaviour</h3>
-            <p>Prior notices, compounds, complaints, and prosecution history help officers focus on higher-risk entities first.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="slide fit" data-title="Strategic Fit">
-        <div class="slide-copy">
-          <p class="label">Strategic fit with SSM 2026-2030</p>
-          <h2>The project supports regulatory efficiency, digitalisation, and public trust.</h2>
-          <p class="lead">SSM's SDP IV emphasises legal and regulatory efficiency, operational excellence, data-driven decision-making, innovative digital solutions, governance, and confidence in the business ecosystem.</p>
-        </div>
-        <div class="fit-board">
-          <div><span>SSM priority</span><strong>Regulatory efficiency</strong><p>Prioritise entities needing attention.</p></div>
-          <div><span>Project response</span><strong>Risk queue</strong><p>Rank companies by risk score and reason code.</p></div>
-          <div><span>SSM priority</span><strong>Digital transformation</strong><p>Modernise monitoring and service delivery.</p></div>
-          <div><span>Project response</span><strong>AI dashboard</strong><p>Turn data into alerts and intervention actions.</p></div>
-          <div><span>SSM priority</span><strong>Public trust</strong><p>Support transparent, accountable enforcement.</p></div>
-          <div><span>Project response</span><strong>Explainable audit trail</strong><p>Show why each alert was generated and what action followed.</p></div>
-        </div>
-      </section>
-
-      <section class="slide solution" data-title="Solution">
-        <div class="slide-copy wide">
-          <p class="label">The proposed solution</p>
-          <h2>An early-warning layer on top of SSM's existing operational data.</h2>
-        </div>
-        <div class="pipeline">
-          <article>
-            <span>Data sources</span>
-            <strong>Registry, filing, MBRS, complaints, enforcement history</strong>
-          </article>
-          <article>
-            <span>AI engine</span>
-            <strong>Risk scoring, anomaly detection, explainability, bias checks</strong>
-          </article>
-          <article>
-            <span>Officer dashboard</span>
-            <strong>Risk queue, company profile, alerts, interventions, audit log</strong>
-          </article>
-        </div>
-        <div class="feature-strip">
-          <span>Risk score</span>
-          <span>Reason codes</span>
-          <span>Recommended action</span>
-          <span>Case assignment</span>
-          <span>CSV/email export</span>
-        </div>
-      </section>
-
-      <section class="slide model" data-title="Model">
-        <div class="slide-copy">
-          <p class="label">Risk indicators and AI model design</p>
-          <h2>The model must be accurate, explainable, and useful for officers.</h2>
-        </div>
-        <div class="model-grid">
-          <article class="list-card">
-            <h3>Candidate indicators</h3>
-            <ul>
-              <li>Annual Return filing status and filing delay</li>
-              <li>Financial Statement lodgement and modified opinion signals</li>
-              <li>Company secretary, director, address, and ownership changes</li>
-              <li>Prior notices, compounds, complaints, prosecution files</li>
-              <li>Dormancy, expired registration, or unresolved charge patterns</li>
-            </ul>
-          </article>
-          <article class="score-card">
-            <h3>Evaluation package</h3>
-            <div class="score-grid">
-              <span>Accuracy</span>
-              <span>Precision</span>
-              <span>Recall</span>
-              <span>F1-score</span>
-              <span>ROC-AUC</span>
-              <span>Confusion matrix</span>
+      <section class="stage" aria-live="polite">
+        <article class="slide active cover-slide" data-title="Opening">
+          <div class="corner-label">01</div>
+          <p class="vertical-label">OPENING</p>
+          <div class="cover-grid">
+            <div class="headline-block">
+              <p class="eyebrow">From corporate filing data to compliance intelligence</p>
+              <h1>Detect risk earlier. Prioritise action faster. Strengthen trust.</h1>
+              <p class="lead">A focused RM100,000 pilot that converts SSM operational data into explainable risk scores, alerts, and intervention workflows.</p>
             </div>
-            <p>Explainability report identifies the top factors behind each risk score.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="slide workflow" data-title="Workflow">
-        <div class="slide-copy wide">
-          <p class="label">Officer-centred prototype workflow</p>
-          <h2>The output is an operational tool, not just a research model.</h2>
-        </div>
-        <div class="product-frame">
-          <div class="product-sidebar">
-            <strong>SSM Risk Console</strong>
-            <span class="selected">Risk Queue</span>
-            <span>Company Profile</span>
-            <span>Alerts</span>
-            <span>Interventions</span>
-            <span>Audit Log</span>
-          </div>
-          <div class="product-main">
-            <div class="product-top">
-              <div><span>Critical</span><strong>128</strong></div>
-              <div><span>High</span><strong>642</strong></div>
-              <div><span>New alerts</span><strong>1,240</strong></div>
-              <div><span>Avg. risk</span><strong>61.8</strong></div>
-            </div>
-            <div class="risk-table">
-              <div class="row head"><span>Entity</span><span>Risk</span><span>Reason</span><span>Action</span></div>
-              <div class="row"><span>Company A</span><span class="pill critical">Critical</span><span>AR missing + prior notice</span><span>Open case</span></div>
-              <div class="row"><span>Company B</span><span class="pill high">High</span><span>FS delay + profile change</span><span>Review</span></div>
-              <div class="row"><span>Company C</span><span class="pill medium">Medium</span><span>Repeated late filing</span><span>Notify</span></div>
+            <div class="promise-card">
+              <span>Grant-ready promise</span>
+              <strong>Low-cost AI prototype with direct regulatory value.</strong>
+              <dl>
+                <div><dt>Duration</dt><dd>12 months</dd></div>
+                <div><dt>Output</dt><dd>Model, dashboard, report, IP, training toolkit</dd></div>
+                <div><dt>Decision</dt><dd>Approve pilot and data-sharing arrangement</dd></div>
+              </dl>
             </div>
           </div>
-        </div>
+        </article>
+
+        <article class="slide evidence-slide" data-title="Evidence">
+          <div class="corner-label">02</div>
+          <p class="vertical-label">PROBLEM STATEMENT</p>
+          <div class="slide-heading">
+            <p class="eyebrow">The compliance challenge is measurable</p>
+            <h2>39,325 active companies did not file Annual Return in 2023.</h2>
+          </div>
+          <div class="metric-row">
+            <div class="metric-card red">
+              <span>Did not file</span>
+              <strong>39,325</strong>
+              <p>Active companies in 2023.</p>
+            </div>
+            <div class="metric-card green">
+              <span>Submitted</span>
+              <strong>527,506</strong>
+              <p>Active companies submitted Annual Return.</p>
+            </div>
+            <div class="metric-card navy">
+              <span>Compliance rate</span>
+              <strong>93%</strong>
+              <p>Strong overall compliance, but a large residual risk pool.</p>
+            </div>
+          </div>
+          <div class="insight-strip">
+            <strong>Grant logic:</strong>
+            <span>SSM does not need more generic reminders. SSM needs risk-based prioritisation for the entities most likely to require early attention.</span>
+          </div>
+          <p class="source">Source: SSM Annual Report 2023 Enforcement Initiatives.</p>
+        </article>
+
+        <article class="slide problem-slide" data-title="Current Gap">
+          <div class="corner-label">03</div>
+          <p class="vertical-label">CURRENT GAP</p>
+          <div class="slide-heading wide">
+            <p class="eyebrow">Why reactive enforcement is not enough</p>
+            <h2>Non-compliance creates signals before it becomes an enforcement case.</h2>
+          </div>
+          <div class="three-column">
+            <div class="problem-card">
+              <span>01</span>
+              <h3>Signals are scattered</h3>
+              <p>Filing delays, profile changes, notices, complaints, and enforcement history sit across operational touchpoints.</p>
+            </div>
+            <div class="problem-card">
+              <span>02</span>
+              <h3>Risk is not continuously profiled</h3>
+              <p>Officers need a ranked queue, not only isolated records or routine compliance reminders.</p>
+            </div>
+            <div class="problem-card">
+              <span>03</span>
+              <h3>Intervention timing matters</h3>
+              <p>Earlier visibility enables preventive notices, targeted review, education, or case escalation.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide solution-slide" data-title="Solution">
+          <div class="corner-label">04</div>
+          <p class="vertical-label">SOLUTION</p>
+          <div class="slide-heading">
+            <p class="eyebrow">The proposed solution</p>
+            <h2>An AI early-warning layer on top of existing SSM data.</h2>
+          </div>
+          <div class="pipeline">
+            <div>
+              <span>Data</span>
+              <strong>Registry, filing, MBRS, complaints, enforcement history</strong>
+            </div>
+            <div>
+              <span>AI</span>
+              <strong>Risk scoring, anomaly detection, explainability, bias checks</strong>
+            </div>
+            <div>
+              <span>Action</span>
+              <strong>Risk queue, reason code, recommended action, audit trail</strong>
+            </div>
+          </div>
+          <div class="bottom-message">The system supports officer judgement. It does not replace it.</div>
+        </article>
+
+        <article class="slide usp-slide" data-title="Innovation & USP">
+          <div class="corner-label">05</div>
+          <p class="vertical-label">INNOVATION & USP</p>
+          <div class="slide-heading wide">
+            <p class="eyebrow">What makes this grant-worthy</p>
+            <h2>Four USP points that increase SSM's return from a small pilot.</h2>
+          </div>
+          <div class="usp-grid">
+            <div class="usp-card">
+              <span>USP 1</span>
+              <h3>SSM-specific compliance intelligence</h3>
+              <p>Built around filing, MBRS, registry, and enforcement realities instead of a generic AI dashboard.</p>
+            </div>
+            <div class="usp-card">
+              <span>USP 2</span>
+              <h3>Explainable risk scoring</h3>
+              <p>Every flagged entity includes reason codes so officers can understand why attention is needed.</p>
+            </div>
+            <div class="usp-card">
+              <span>USP 3</span>
+              <h3>Preventive intervention workflow</h3>
+              <p>Risk signals are converted into notices, review actions, case assignment, and follow-up tracking.</p>
+            </div>
+            <div class="usp-card">
+              <span>USP 4</span>
+              <h3>Low-cost scalable foundation</h3>
+              <p>RM100,000 creates a validated prototype that SSM can expand after pilot evidence is proven.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide market-slide" data-title="Target Users">
+          <div class="corner-label">06</div>
+          <p class="vertical-label">TARGET USERS</p>
+          <div class="slide-heading">
+            <p class="eyebrow">Who benefits</p>
+            <h2>Designed first for SSM officers, with wider ecosystem impact.</h2>
+          </div>
+          <div class="audience-map">
+            <div class="audience primary">
+              <span>Primary users</span>
+              <strong>SSM enforcement and compliance monitoring officers</strong>
+              <p>Prioritise reviews, inspect risk drivers, assign actions, and track interventions.</p>
+            </div>
+            <div class="audience">
+              <span>Policy users</span>
+              <strong>SSM policy and governance teams</strong>
+              <p>Observe patterns, evaluate compliance trends, and support evidence-based policy improvement.</p>
+            </div>
+            <div class="audience">
+              <span>Indirect beneficiaries</span>
+              <strong>Companies, SMEs, LLPs, intermediaries, and the public</strong>
+              <p>Earlier correction, better compliance culture, and stronger confidence in the corporate ecosystem.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide product-slide" data-title="Prototype Workflow">
+          <div class="corner-label">07</div>
+          <p class="vertical-label">PROTOTYPE</p>
+          <div class="slide-heading wide">
+            <p class="eyebrow">Officer-centred workflow</p>
+            <h2>From risk detection to accountable intervention.</h2>
+          </div>
+          <div class="dashboard-mock">
+            <div class="mock-sidebar">
+              <strong>SSM Risk Console</strong>
+              <span class="active">Risk Queue</span>
+              <span>Company Profile</span>
+              <span>Alerts</span>
+              <span>Interventions</span>
+              <span>Audit Log</span>
+            </div>
+            <div class="mock-main">
+              <div class="mock-stats">
+                <div><span>Critical</span><strong>128</strong></div>
+                <div><span>High</span><strong>642</strong></div>
+                <div><span>New alerts</span><strong>1,240</strong></div>
+              </div>
+              <div class="risk-list">
+                <div class="risk-row head"><span>Entity</span><span>Risk</span><span>Reason</span><span>Action</span></div>
+                <div class="risk-row"><span>Company A</span><span class="pill critical">Critical</span><span>AR missing + prior notice</span><span>Open case</span></div>
+                <div class="risk-row"><span>Company B</span><span class="pill high">High</span><span>FS delay + profile change</span><span>Review</span></div>
+                <div class="risk-row"><span>Company C</span><span class="pill medium">Medium</span><span>Repeated late filing</span><span>Notify</span></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="slide impact-slide" data-title="Impact">
+          <div class="corner-label">08</div>
+          <p class="vertical-label">IMPACT</p>
+          <div class="slide-heading wide">
+            <p class="eyebrow">The impact we create</p>
+            <h2>One pilot, four practical outcomes for SSM.</h2>
+          </div>
+          <div class="impact-grid">
+            <div><span>For enforcement</span><strong>Earlier detection</strong><p>Identify high-risk entities before issues escalate.</p></div>
+            <div><span>For operations</span><strong>Better prioritisation</strong><p>Focus officer time on entities with stronger risk evidence.</p></div>
+            <div><span>For governance</span><strong>Auditable decisions</strong><p>Track why alerts are generated and what action follows.</p></div>
+            <div><span>For policy</span><strong>Evidence-based insight</strong><p>Reveal recurring non-compliance patterns for future improvement.</p></div>
+          </div>
+          <div class="impact-line">From reactive enforcement pressure to proactive compliance intelligence.</div>
+        </article>
+
+        <article class="slide roadmap-slide" data-title="Roadmap">
+          <div class="corner-label">09</div>
+          <p class="vertical-label">PRODUCT ROADMAP</p>
+          <div class="slide-heading wide">
+            <p class="eyebrow">12-month delivery plan</p>
+            <h2>A realistic path from governance to pilot handover.</h2>
+          </div>
+          <div class="roadmap">
+            <div><span>Aug 2026</span><strong>M0 Kick-off</strong><p>Scope, governance, pilot users.</p></div>
+            <div><span>Sep 2026</span><strong>M1 Design</strong><p>Data sharing and baseline indicators.</p></div>
+            <div><span>Nov 2026</span><strong>M2 Data</strong><p>Clean dataset and early analytics.</p></div>
+            <div><span>Feb 2027</span><strong>M3 Model</strong><p>Training, validation, bias audit.</p></div>
+            <div><span>Apr 2027</span><strong>M4 Prototype</strong><p>Dashboard and AI engine.</p></div>
+            <div><span>Jul 2027</span><strong>M6 Handover</strong><p>Report, SOP, video, scaling plan.</p></div>
+          </div>
+          <div class="trl-header">
+            <strong>Technology readiness progression</strong>
+            <span>How the pilot evolves from compliance-risk concept to validated dashboard prototype.</span>
+          </div>
+          <div class="trl-track" aria-label="Technology readiness level progression">
+            <div><span>TRL1</span><strong>Need observed</strong><p>Compliance risk problem framed.</p></div>
+            <div><span>TRL2</span><strong>Concept formulated</strong><p>M0-M1: AI risk framework and data access plan.</p></div>
+            <div><span>TRL3</span><strong>Proof of concept</strong><p>M2: cleaned data and preliminary indicators.</p></div>
+            <div><span>TRL4</span><strong>Validated in lab</strong><p>M3-M4: model training, validation, bias audit.</p></div>
+            <div><span>TRL5</span><strong>Relevant environment</strong><p>M4-M6: dashboard pilot and stakeholder validation.</p></div>
+          </div>
+        </article>
+
+        <article class="slide ask-slide" data-title="Grant Ask">
+          <div class="corner-label">10</div>
+          <p class="vertical-label">GRANT ASK</p>
+          <div class="ask-grid">
+            <div class="slide-heading">
+              <p class="eyebrow">Why approve now</p>
+              <h2>Approve a focused RM100,000 pilot for proactive compliance monitoring.</h2>
+              <p class="lead">This grant turns existing SSM data into a practical early-warning capability that helps officers detect risk earlier, act faster, and govern with stronger evidence.</p>
+            </div>
+            <div class="team-card">
+              <span>Project team credibility</span>
+              <h3>Lead researcher</h3>
+              <strong>Ts. Dr. Abdul Hadi Mohamad</strong>
+              <p>Senior Lecturer, School of Computer Science, Taylor's University. Expertise: AI, machine learning, software engineering, and project management.</p>
+              <h3>Core team</h3>
+              <ul>
+                <li>Ts. Dr. Steve Teoh Chee Hoo - enterprise systems, APIs, compliance workflows</li>
+                <li>Ts. Dr. Janitha Kularajasingam - governance, policy, commercialisation</li>
+                <li>Dr. Muhamad Farhin Harun - web prototype, dashboard, backend integration</li>
+                <li>Dr. Haziqah Shamsudin - machine learning, intelligent systems, model evaluation</li>
+              </ul>
+            </div>
+          </div>
+          <div class="decision-band" aria-label="Grant decision and outputs">
+            <div>
+              <strong>Decision needed</strong>
+              <span>Grant approval</span>
+              <span>Data-sharing arrangement</span>
+              <span>SSM focal person</span>
+              <span>Pilot enforcement users</span>
+            </div>
+            <div>
+              <strong>Core outputs</strong>
+              <span>AI model</span>
+              <span>Early warning dashboard</span>
+              <span>Explainability report</span>
+              <span>SOP + training toolkit</span>
+              <span>Final report + IP</span>
+            </div>
+          </div>
+        </article>
       </section>
 
-      <section class="slide governance" data-title="Governance">
-        <div class="slide-copy wide">
-          <p class="label">Governance, security, and responsible AI</p>
-          <h2>Trust must be designed into the prototype from day one.</h2>
-        </div>
-        <div class="governance-grid">
-          <article><h3>PDPA alignment</h3><p>Use approved data, define processing purpose, and minimise personal data exposure.</p></article>
-          <article><h3>Role-based access</h3><p>Separate research, technical, and enforcement officer access.</p></article>
-          <article><h3>Explainable AI</h3><p>Each risk score includes reason codes and factor contribution.</p></article>
-          <article><h3>Bias and quality checks</h3><p>Validate model behaviour across company categories and risk levels.</p></article>
-          <article><h3>Audit log</h3><p>Record alert generation, officer review, action taken, and case status.</p></article>
-          <article><h3>SSM-controlled deployment</h3><p>Prototype access remains subject to SSM governance requirements.</p></article>
-        </div>
-      </section>
-
-      <section class="slide roadmap" data-title="Roadmap">
-        <div class="slide-copy wide">
-          <p class="label">12-month delivery roadmap and outputs</p>
-          <h2>A realistic path from data governance to pilot handover.</h2>
-        </div>
-        <div class="timeline">
-          <article><span>Aug 2026</span><strong>M0 Kick-off</strong><p>Scope, governance, pilot alignment.</p></article>
-          <article><span>Sep 2026</span><strong>M1 Design</strong><p>Data sharing and baseline indicators.</p></article>
-          <article><span>Nov 2026</span><strong>M2 Data</strong><p>Clean dataset and early analytics.</p></article>
-          <article><span>Feb 2027</span><strong>M3 Model</strong><p>AI training, validation, bias audit.</p></article>
-          <article><span>Apr 2027</span><strong>M4 Prototype</strong><p>Dashboard, AI engine, API integration.</p></article>
-          <article><span>Jul 2027</span><strong>M6 Closure</strong><p>Report, video, SOP, scaling recommendation.</p></article>
-        </div>
-        <div class="deliverables">
-          <span>Final report</span><span>AI model</span><span>Dashboard prototype</span><span>Training module</span><span>Indexed article</span><span>Copyright</span>
-        </div>
-      </section>
-
-      <section class="slide ask" data-title="Ask">
-        <div class="slide-copy">
-          <p class="label">The ask</p>
-          <h2>Approve a focused RM100,000 pilot for proactive compliance monitoring.</h2>
-          <p class="lead">This project does not replace enforcement judgment. It gives SSM officers an earlier, clearer, and more evidence-based way to decide where attention is needed most.</p>
-        </div>
-        <div class="ask-panel">
-          <h3>What SSM gets</h3>
-          <ul>
-            <li>AI-based risk prediction model</li>
-            <li>Early warning dashboard prototype</li>
-            <li>Explainability and bias audit report</li>
-            <li>User manual, SOP templates, training module</li>
-            <li>Final report, publication, demo video, copyright</li>
-          </ul>
-        </div>
-        <div class="approval-strip">
-          <span>Grant approval</span>
-          <span>Data-sharing arrangement</span>
-          <span>SSM focal person</span>
-          <span>Pilot enforcement users</span>
-        </div>
-        <footer class="sources">
-          <a href="https://annualreport.ssm.com.my/AR2023/downloads/en/SSM_AR2023_Enforcement_Initiative.pdf">Annual Report 2023 Enforcement</a>
-          <a href="https://www.ssm.com.my/Pages/About_SSM/Corporate_Profile/SDP-IV.aspx">SSM SDP IV</a>
-          <a href="https://www.ssm.com.my/Pages/About_SSM/Overview.aspx">SSM Overview</a>
-          <a href="https://www.ekonomi.gov.my/sites/default/files/2021-02/malaysia-digital-economy-blueprint.pdf">MyDIGITAL</a>
-        </footer>
-      </section>
+      <footer class="deck-bottom">
+        <div class="progress-track" aria-hidden="true"><span id="progressBar"></span></div>
+        <nav class="slide-nav" aria-label="Slides">
+          <button type="button" class="nav-dot active" data-slide="0">01</button>
+          <button type="button" class="nav-dot" data-slide="1">02</button>
+          <button type="button" class="nav-dot" data-slide="2">03</button>
+          <button type="button" class="nav-dot" data-slide="3">04</button>
+          <button type="button" class="nav-dot" data-slide="4">05</button>
+          <button type="button" class="nav-dot" data-slide="5">06</button>
+          <button type="button" class="nav-dot" data-slide="6">07</button>
+          <button type="button" class="nav-dot" data-slide="7">08</button>
+          <button type="button" class="nav-dot" data-slide="8">09</button>
+          <button type="button" class="nav-dot" data-slide="9">10</button>
+        </nav>
+        <span class="slide-count" id="slideCount">1 / 10</span>
+      </footer>
     </main>
 
     <script src="script.js"></script>

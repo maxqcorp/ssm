@@ -1,5 +1,5 @@
 const slides = Array.from(document.querySelectorAll(".slide"));
-const navItems = Array.from(document.querySelectorAll(".nav-item"));
+const navItems = Array.from(document.querySelectorAll(".nav-dot"));
 const prevButton = document.getElementById("prevSlide");
 const nextButton = document.getElementById("nextSlide");
 const slideCount = document.getElementById("slideCount");
