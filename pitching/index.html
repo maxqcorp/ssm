@@ -336,7 +336,7 @@
                 </div>
               </div>
               <div class="member-grid">
-                <div><span>Enterprise Systems</span><strong>Ts. Dr. Steve Teoh Chee Hoo</strong><p>APIs and compliance workflow integration.</p></div>
+                <div><span>Enterprise Systems</span><strong>Ts. Dr. Steve Teoh Chee Hooi</strong><p>APIs and compliance workflow integration.</p></div>
                 <div><span>Governance</span><strong>Ts. Dr. Janitha Kularajasingam</strong><p>Policy alignment and commercialisation pathway.</p></div>
                 <div><span>Prototype</span><strong>Dr. Muhamad Farhin Harun</strong><p>Web dashboard and backend integration.</p></div>
                 <div><span>AI Evaluation</span><strong>Dr. Haziqah Shamsudin</strong><p>Machine learning, intelligent systems, model validation.</p></div>
@@ -361,6 +361,55 @@
             </div>
           </div>
         </article>
+
+        <article class="slide appendix-slide" data-title="Appendix">
+          <div class="corner-label">11</div>
+          <p class="vertical-label">APPENDIX</p>
+          <div class="appendix-heading">
+            <p class="eyebrow">Technical appendix</p>
+            <h2>Layered design of the SSM predictive-compliance AI engine</h2>
+            <p>Regulator-operated SupTech · ~1M+ entities · batch + event-driven scoring · deterministic rules + ML/graph/neuro-symbolic core · all explainable</p>
+          </div>
+          <div class="layer-stack" aria-label="Layered SSM predictive-compliance AI engine">
+            <div class="layer-row">
+              <span>L6</span>
+              <div><strong>Supervision & Case Layer</strong><p>Risk worklist · case console · evidence and explanation view · corrective-action review · officer decision capture · contestation / redress workflow</p></div>
+            </div>
+            <div class="layer-row">
+              <span>L5</span>
+              <div><strong>Decision Orchestration</strong><p>Risk-score fusion · precision prioritisation · corrective-action synthesis · policy / threshold engine</p></div>
+            </div>
+            <div class="layer-row model-layer">
+              <span>L4</span>
+              <div>
+                <strong>Model & Reasoning Layer</strong>
+                <em>Hybrid core: bright-line checks deterministic; predictive, relational and fuzzy matters are ML / graph / neuro-symbolic.</em>
+                <div class="model-grid">
+                  <div><b>Early-Warning / Risk</b><small>XGBoost · LightGBM · survival · SHAP</small></div>
+                  <div><b>Anomaly Detection</b><small>iForest · autoencoder · one-class · SMOTE</small></div>
+                  <div><b>Graph / GNN</b><small>ownership KG · GCN/GAT · GNNExplainer</small></div>
+                  <div><b>Legal-text + Neuro-symbolic</b><small>RAG · LLM verifier · proof traces</small></div>
+                  <div class="wide"><b>Deterministic rules engine</b><small>LegalRuleML / code · deadlines · thresholds · registers</small></div>
+                  <div class="wide"><b>Explainability service</b><small>SHAP · GNNExplainer · solver proof traces</small></div>
+                </div>
+              </div>
+            </div>
+            <div class="layer-row">
+              <span>L3</span>
+              <div><strong>Knowledge Layer</strong><p>Versioned Companies Act 2016 + SSM directive rule base · ownership / control knowledge graph · statute / guideline vector index</p></div>
+            </div>
+            <div class="layer-row">
+              <span>L2</span>
+              <div><strong>Data Platform</strong><p>Feature store · data lake / warehouse · entity resolution · enforcement label store · lineage and versioning</p></div>
+            </div>
+            <div class="layer-row">
+              <span>L1</span>
+              <div><strong>Ingestion</strong><p>MBRS 2.0 (XBRL) · MyCoID · e-BOS · e-Compound / Status 308/550 · e-Complaint · external watchlists · ID verification</p></div>
+            </div>
+          </div>
+          <div class="cross-cutting"><strong>Cross-cutting</strong><span>AuthN/Z · immutable audit log · model registry · monitoring drift / bias / quality / calibration · secrets and keys · AIA + DPIA register · sovereign hosting</span></div>
+          <p class="appendix-note">Data flows up; control and explanations flow down. The model layer runs four AI families alongside deterministic rules and a shared explainability service.</p>
+        </article>
       </section>
 
       <footer class="deck-bottom">
@@ -376,8 +425,9 @@
           <button type="button" class="nav-dot" data-slide="7">08</button>
           <button type="button" class="nav-dot" data-slide="8">09</button>
           <button type="button" class="nav-dot" data-slide="9">10</button>
+          <button type="button" class="nav-dot" data-slide="10">11</button>
         </nav>
-        <span class="slide-count" id="slideCount">1 / 10</span>
+        <span class="slide-count" id="slideCount">1 / 11</span>
       </footer>
     </main>
 
