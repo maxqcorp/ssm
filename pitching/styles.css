@@ -108,12 +108,22 @@ body {
 
 .deck-actions {
   display: flex;
+  position: relative;
   gap: 10px;
-  min-width: 222px;
+  min-width: 332px;
   justify-content: flex-end;
 }
 
-.export-button {
+.download-menu {
+  position: relative;
+}
+
+.download-menu[open] .export-button {
+  border-color: var(--teal);
+}
+
+.export-button,
+.prototype-button {
   height: 46px;
   padding: 0 13px;
   border: 1px solid #bcc8c2;
@@ -126,7 +136,74 @@ body {
   box-shadow: 0 9px 20px rgba(16, 45, 50, 0.08);
 }
 
+.export-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  list-style: none;
+}
+
+.export-button::-webkit-details-marker {
+  display: none;
+}
+
+.export-button::after {
+  content: "";
+  width: 0;
+  height: 0;
+  margin-top: 2px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid currentColor;
+}
+
+.prototype-button {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
 .export-button:disabled {
+  color: #819099;
+  background: #edf1ee;
+  cursor: wait;
+}
+
+.download-options {
+  position: absolute;
+  top: 52px;
+  right: 0;
+  z-index: 20;
+  display: grid;
+  gap: 6px;
+  width: 128px;
+  padding: 8px;
+  background: #ffffff;
+  border: 1px solid #bcc8c2;
+  border-radius: 8px;
+  box-shadow: 0 14px 30px rgba(16, 45, 50, 0.16);
+}
+
+.download-options button {
+  width: 100%;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 6px;
+  color: var(--deep);
+  background: #f2f6f4;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 900;
+  text-align: left;
+}
+
+.download-options button:hover,
+.download-options button:focus-visible {
+  color: #ffffff;
+  background: var(--teal);
+}
+
+.download-options button:disabled {
   color: #819099;
   background: #edf1ee;
   cursor: wait;

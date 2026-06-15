@@ -21,8 +21,14 @@
           <strong id="currentTitle">Opening</strong>
         </div>
         <div class="deck-actions" aria-label="Slide controls">
-          <button class="export-button" id="downloadPdf" type="button">PDF</button>
-          <button class="export-button" id="downloadPptx" type="button">PPTX</button>
+          <details class="download-menu">
+            <summary class="export-button">Download</summary>
+            <div class="download-options" aria-label="Download deck">
+              <button id="downloadPdf" type="button">PDF</button>
+              <button id="downloadPptx" type="button">PPTX</button>
+            </div>
+          </details>
+          <a class="prototype-button" href="https://ssmcompliancesystem.vercel.app/" target="_blank" rel="noopener noreferrer">Prototype</a>
           <button class="icon-button" id="prevSlide" type="button" aria-label="Previous slide" title="Previous slide">&lt;</button>
           <button class="icon-button" id="nextSlide" type="button" aria-label="Next slide" title="Next slide">&gt;</button>
         </div>

@@ -7,6 +7,7 @@ const progressBar = document.getElementById("progressBar");
 const currentTitle = document.getElementById("currentTitle");
 const downloadPdfButton = document.getElementById("downloadPdf");
 const downloadPptxButton = document.getElementById("downloadPptx");
+const downloadMenu = document.querySelector(".download-menu");
 
 let activeIndex = 0;
 
@@ -124,6 +125,10 @@ async function withExportState(button, label, callback) {
   const buttons = [downloadPdfButton, downloadPptxButton].filter(Boolean);
   const originalText = button.textContent;
 
+  if (downloadMenu) {
+    downloadMenu.open = false;
+  }
+
   buttons.forEach((item) => {
     item.disabled = true;
   });
@@ -204,5 +209,11 @@ if (downloadPdfButton) {
 if (downloadPptxButton) {
   downloadPptxButton.addEventListener("click", downloadPptx);
 }
+
+document.addEventListener("click", (event) => {
+  if (downloadMenu && !downloadMenu.contains(event.target)) {
+    downloadMenu.open = false;
+  }
+});
 
 showSlide(0);
