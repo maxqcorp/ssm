@@ -21,6 +21,8 @@
           <strong id="currentTitle">Opening</strong>
         </div>
         <div class="deck-actions" aria-label="Slide controls">
+          <button class="export-button" id="downloadPdf" type="button">PDF</button>
+          <button class="export-button" id="downloadPptx" type="button">PPTX</button>
           <button class="icon-button" id="prevSlide" type="button" aria-label="Previous slide" title="Previous slide">&lt;</button>
           <button class="icon-button" id="nextSlide" type="button" aria-label="Next slide" title="Next slide">&gt;</button>
         </div>
@@ -362,8 +364,18 @@
           </div>
         </article>
 
-        <article class="slide appendix-slide" data-title="Appendix">
+        <article class="slide appendices-title-slide" data-title="Appendices">
           <div class="corner-label">11</div>
+          <p class="vertical-label">APPENDICES</p>
+          <div class="appendices-title-block">
+            <p class="eyebrow">Supporting technical detail</p>
+            <h2>Appendices</h2>
+            <p>Technical appendix follows with the layered design of the SSM predictive-compliance AI engine.</p>
+          </div>
+        </article>
+
+        <article class="slide appendix-slide" data-title="Technical Appendix">
+          <div class="corner-label">12</div>
           <p class="vertical-label">APPENDIX</p>
           <div class="appendix-heading">
             <p class="eyebrow">Technical appendix</p>
@@ -426,11 +438,15 @@
           <button type="button" class="nav-dot" data-slide="8">09</button>
           <button type="button" class="nav-dot" data-slide="9">10</button>
           <button type="button" class="nav-dot" data-slide="10">11</button>
+          <button type="button" class="nav-dot" data-slide="11">12</button>
         </nav>
-        <span class="slide-count" id="slideCount">1 / 11</span>
+        <span class="slide-count" id="slideCount">1 / 12</span>
       </footer>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pptxgenjs@3.12.0/dist/pptxgen.bundle.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
